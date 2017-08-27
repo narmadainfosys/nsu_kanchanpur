@@ -2,18 +2,30 @@
 <p>Contacts of Nepal Students Unions followers & officials in Kanchanpur</p>
 
 
-<table>
+<table class="table table-striped">
+<thead class="thead-inverse">
+
   <tr>
     <th>Full Name</th>
     <th>Address</th>
     <th>Mobile</th>
+
+    <th>2nd Number</th>
+        <th>Home Phone</th>
   </tr>
+  
+</thead>
 
 <% @contacts.each do |contact| %>
     <tr>
       <td><%= contact.full_name %></td>
       <td><%= contact.address %></td>
       <td><%= contact.mobile %></td>
+      <td><%= contact.mobile2 %></td>
+            <td><%= contact.home_phone %></td>
 
+         
     </tr>
   <% end %>
+  
+  </table>
