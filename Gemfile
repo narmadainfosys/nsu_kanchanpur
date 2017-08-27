@@ -25,5 +25,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
 gem 'rails_admin'
 gem 'devise'
+gem 'bootstrap'
+gem 'autoprefixer-rails'
