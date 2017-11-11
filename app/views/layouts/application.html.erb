@@ -20,9 +20,10 @@
       <li class="nav-item">
         <%= link_to 'Contacts' , root_path, class: "nav-link" %>
       </li>
+      <!--
       <li class="nav-item">
         <%= link_to 'Blog', articles_index_path, class: "nav-link" %>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -31,6 +32,19 @@
 <p class="alert"><%= alert %></p>
 
 <%= yield %>
+<!--- FOOTER START -->
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left"> 2017 - Site Built By 
+      <a href="https://www.facebook.com/vishishtnp">Bishisht Bhatta</a>
+      </p>
+      
+      
+    </div>
+    
+    
+  </div>
+<!--- FOOTER END -->
 </div>
 </body>
 </html>
