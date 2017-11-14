@@ -1,9 +1,16 @@
-<h1>Blog</h1>
-<p>Blogs from different followers of NSU</p>
+<h1 align="center">Notice Board</h1>
+<h1 align="center">सूचना पाटी</h1>
 
+&nbsp
+&nbsp
+&nbsp
+<hr />
+<hr />
 
 <% @articles.each do |article| %>
-    <h4><%= article.title %> </h4> <br />
-    <p> <%= article.body %> </p>
-    <hr />
+    <div class="container">
+        <h4><%= article.title %> </h4> <br />
+        <p> <%= article.body %> </p>
+        <hr />
+    </div>
 <% end %>
