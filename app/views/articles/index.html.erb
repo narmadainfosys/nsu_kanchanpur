@@ -12,6 +12,7 @@
     <div class="container">
         <h4><%= article.title %> </h4> <br />
         <p> <%= article.body %> </p>
+        <p><%= social_share_button_tag(article.title) %></p>
         <hr />
     </div>
 <% end %>
