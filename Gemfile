@@ -22,9 +22,6 @@ group :development, :test do
   gem "binding_of_caller"
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
-group :development do
   gem 'web-console' 
 end
 
