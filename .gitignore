@@ -11,6 +11,12 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# IDE files
+.idea
+/*.iml
+.vscode
+
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
