@@ -1,28 +1,148 @@
-<h1>Contacts</h1>
-<p>Contacts of Nepal Students Unions followers & officials in Kanchanpur</p>
-<p>कंचनपुर जिल्लाका नेपाल विद्यार्थी संघ तथा नेपाली कांग्रेसका साथीहरुको सम्पर्क नम्बरहरु</p>
-<p><%= link_to 'Notice Board / सूचना पाटी ', articles_index_path, class: "nav-link" %></p>
+<div class="container-fluid">
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%=link_to root_path, class:"navbar-brand",style:"text-decoration:none" do %><%= image_tag '/assets/nsu_logo.png', class:"logo", height:"40" %><span class="text-muted">NSU Kanchanpur</span><% end %>
+  <!-----<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+-------->
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                
+    </ul>
+  </div>
+</nav>
 
-<table class="table table-striped">
-  
-  <thead class="thead-inverse">
-    <tr>
-      <th>Full Name</th>
-      <th>Address</th>
-      <th>Mobile</th>
-      <th>2nd Number</th>
-      <th>Home Phone</th>
-    </tr>
-  </thead>
+<div class="pt-4 d-none d-sm-block" style="background-color:#99c691">
+       <div class="row">
+            <div class="col-md-2">
+                <%= image_tag '/assets/nepalflag.gif', class:"img-fluid  align-middle"%>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/bpkoirala.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">BP Koirala</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/suvarnasamsher.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Subarna Samsher Rana</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/ganeshmansignh.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Ganesh Man Singh</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/krishnaprasadbhattrai.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Krishna Prasad Bhattarai</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/girizaprasad.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Girija Prasad Koirala</span>
+                    </div>
+                    <div class="col-md-2 text-center">
+                    <%= image_tag '/assets/leaders/sushilkoirala.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Sushil Koirala</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <%= image_tag '/assets/leaders/ndchataut.jpg', class:"img-fluid rounded-circle mx-auto", size:'150x150'%><br>
+                        <span class="text-white">ND Chataut</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+                <%= image_tag '/assets/congressflag.png' , class:"img-fluid mt-5 float-left" %>
+            </div>
+       </div> 
+</div>
 
-  <% @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.full_name %></td>
-        <td><%= contact.address %></td>
-        <td><%= contact.mobile %></td>
-        <td><%= contact.mobile2 %></td>
-        <td><%= contact.home_phone %></td>
-      </tr>
-  <% end %>
-  
-</table>
+<div class="pt-4 d-block d-sm-none" style="background-color:#99c691">
+                <center><%= image_tag '/assets/nepalflag.gif' , class:"img-fluid text-center" %></center>
+        <div class="row p-4">
+                    <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/bpkoirala.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">BP Koirala</span>
+                    </div>
+                    <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/suvarnasamsher.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Subarna Samsher Rana</span>
+                    </div>
+        </div>
+        <div class="row p-4">
+            <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/ganeshmansignh.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Ganesh Man Singh</span>
+                    </div>
+                    <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/krishnaprasadbhattrai.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Krishna Prasad Bhattarai</span>
+                    </div>
+        </div>
+        <div class="row p-4">
+            <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/girizaprasad.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Girija Prasad Koirala</span>
+                    </div>
+                    <div class="col-6 text-center">
+                    <%= image_tag '/assets/leaders/sushilkoirala.png', class:"img-fluid mx-auto mt-5"%>
+                    <span class="text-white">Sushil Koirala</span>
+                    </div>
+        </div>
+        <div class="row">
+                    <div class="col-md-12 text-center">
+                        <%= image_tag '/assets/leaders/ndchataut.jpg', class:"img-fluid rounded-circle mx-auto", size:'150x150'%><br>
+                        <span class="text-white">ND Chataut</span>
+                    </div>
+                </div>
+            <div class="row p-4">
+                <%= image_tag '/assets/congressflag.png' , class:"img-fluid mt-5 float-left" %>
+            </div>
+       </div> 
+</div>
+
+<div class="pt-2">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="true" style="text-decoration:none">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="Notices-tab" data-toggle="tab" href="#Notices" role="tab" aria-controls="Notices" aria-selected="false" style="text-decoration:none">Notices</a>
+                </li>
+              </ul>
+</div>
+<div class="tab-content emp-profile" id="myTabContent">
+      <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">Alt. Number</th>
+                <th scope="col">Home Number</th>
+              </tr>
+            </thead>
+            <tbody>
+            <% @contacts.each do |contact| %>
+              <tr>
+                <th scope="row"><%= contact.full_name %></th>
+                <td><%= contact.address %></td>
+                <td><%= contact.mobile %></td>
+                <td><%= contact.mobile2 %></td>
+                <td><%= contact.home_phone %></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+      </div>
+      <div class="tab-pane fade show" id="Notices" role="tabpanel" aria-labelledby="Notices-tab">
+                  hi
+      </div>
+</div>
+  <!--------------------------------------end of contact tab-------------------------------------------------->
+
+
+</div>
