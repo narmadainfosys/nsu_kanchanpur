@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 gem 'webpacker', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 
