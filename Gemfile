@@ -32,3 +32,5 @@ gem 'devise'
 gem 'bootstrap'
 gem 'autoprefixer-rails'
 gem 'social-share-button'
+gem 'dalli'
+
