@@ -88,7 +88,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    dalli (3.0.4)
+    dalli (3.2.3)
     debug_inspector (1.1.0)
     devise (4.8.0)
       bcrypt (~> 3.0)
